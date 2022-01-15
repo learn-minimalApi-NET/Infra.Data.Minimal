@@ -8,7 +8,7 @@ namespace Infra.Data.Minimal.Contexts
 {
     public class AppDbContext: DbContext
     {
-        public DbSet<Tarefas> Leads { get; set; }
+        public DbSet<Tarefas> Tarefas { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
